@@ -1,0 +1,49 @@
+//ARRRAYS
+//--> DESPUÉS DE ESTA LÍNEA TU CÖDIGO
+var numeros = [1, 2, 3, 4, 5];
+let texto = [
+  'Pizza',
+  'Hamburguesa',
+  'Sushi',
+  'Tacos',
+  'Pasta',
+  'Ensalada',
+  'Ceviche',
+  'Burrito',
+  'Paella',
+  'Empanadas',
+  'Pollo frito',
+  'Sopa de lentejas',
+  'Churrasco',
+  'Quesadillas',
+  'Tamales',
+  'Arepas',
+  'Lasagna',
+  'Falafel',
+  'Curry',
+  'Ratatouille',
+];
+var mixto = [6, 'siete', 8, false, 10];
+//CONDICIONALES
+//--> DESPUÉS DE ESTA LÍNEA TU CÖDIGO
+let max = 0;
+let respuesta = sumario;
+function sumario() {
+  for (let i = 0; i < mixto.length; i++) {
+    if (typeof mixto[i] == Number) {
+      let sumando = 0;
+      sumando += mixto[i];
+
+      max++;
+      if ((max = 2)) {
+        break;
+      }
+    }
+    console.log(mixto[i] + 'no es un numero');
+  }
+  console.log('Los dos numeros dan: ' + sumando);
+  max = 0;
+  sumando = 0;
+}
+//FUNCIONES
+//--> DESPUÉS DE ESTA LÍNEA TU CÖDIGO
