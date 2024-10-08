@@ -6,12 +6,12 @@
  */
 
 var notifications = [
-  "Updates installed successfully. See Settings for new features",
-  "Discover. You can create a password for your account",
-  "Installed. Netflix update file",
-  "Installed. Furi",
-  "There are new events for Call of Duty: Blac Ops III",
-  "Invite. You received an invite from IamtheRealDonFrank"
+  "Has entrado al PortFolio",
+  "La pagina esta hecha con JS",
+  "Mientras funciona no se toca",
+  "Bootstrap << Bulma",
+  "Has probado a apagar y encender?",
+  "Best Portfolio EVER"
 ];
 
 $(document).ready(function() {

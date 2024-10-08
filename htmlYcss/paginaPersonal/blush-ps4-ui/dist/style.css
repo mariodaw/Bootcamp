@@ -8,6 +8,38 @@ identifier {
 }
 */
 
+/* Link */
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+ }
+ 
+ a:link {
+  color: #ffffff;
+ }
+ 
+ a:visited {
+  color: #ffffff;
+ }
+ 
+ a:focus {
+  border-bottom: 1px solid;
+  background: #000000;
+ }
+ 
+ a:hover {
+  border-bottom: 1px solid;
+  background: #050b0100;
+ }
+ 
+ a:active {
+  background: #03000000;
+  color: #ffffff;
+ }
+
+
 *::-webkit-scrollbar, *::-webkit-scrollbar-track {
   background: rgba(0,0,0,0);
 
@@ -371,6 +403,20 @@ header div {
   font-weight: bold;
 }
 
+
+/* 
+
+
+
+
+AQUIAQUIAQUIAQUIAQUIAQUIAQUIAQUIAQUIAQUIAQUI
+
+
+
+
+
+*/
+
 .ps-store {
   background-image: url("https://i.postimg.cc/c1pRT9TJ/ps.png");
 }
@@ -426,7 +472,7 @@ header div {
 }
 
 #god {
-  background-image: url("https://i.postimg.cc/bY7QwSfF/god.png");
+  background-image: url("/htmlYcss/paginaPersonal/src/3455025.png");
 }
 
 #horizon {

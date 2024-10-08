@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+/* navbar */
+
+#nav-3 {
+  background: #b61810d8;
+}
+
+.link-3 {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link-3:hover {
+  background-color: #ffffff;
+  color: #dd5e5e;
+  padding: 24px 10px;
+}
+
+#nav-3 {
+    position: fixed; /* Fija el navbar en una posición */
+    top: 0;          /* Fija el navbar en la parte superior */
+    left: 0;         /* Fija el navbar a la izquierda de la pantalla */
+    width: 100%;     /* Hace que el navbar ocupe todo el ancho de la pantalla */
+    padding: 10px 0;        /* Espaciado interno del navbar */
+    z-index: 1000;    /* Asegura que el navbar esté por encima de otros elementos */
+    text-align: center;
+}
+
+#nav-3 .link-3 {
+    color: white;         /* Color del texto */
+    text-decoration: none; /* Elimina subrayado */
+    padding: 10px 20px;    /* Espaciado entre enlaces */
+    display: inline-block; /* Para que los enlaces se alineen horizontalmente */
+}
+
+#nav-3 .link-3:hover {
+    background-color: #f37c7c; /* Color de fondo al pasar el mouse */
+}
+
+
+#nav-3 {
+    position: fixed;     
+    top: 0;              
+    left: 0;             
+    width: 100%;           
+    padding: 10px 0;     
+    z-index: 1000;       
+    text-align: center;   
+}
+
+#nav-3 .link-3 {   
+    text-decoration: none;
+    padding: 10px 20px;    
+    display: inline-block;  
+}
+
+/* estilo pal body */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    width: 100%;
+    height: 100vh;
+    
+    background: linear-gradient(90deg, #3f51b5,#00bcd4);
+    animation: animate 20s linear infinite;
+}
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        filter: hue-rotate(0deg);
+    }
+} */
+
+/* Estilos para el container debajo del navbar */
+.container {
+    padding: 20px;       /* Espaciado interno del container */
+    width: 100%;         /* Ocupa todo el ancho */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.container h1, .container p {
+    margin: 0 0 20px;    /* Añade márgenes entre los elementos */
+}
+
+.container {
+    position: relative;
+    height: 100vh; /* La altura será del 100% del viewport */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+
+.portada {
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté sobre el fondo */
+}
+
+.guia{
+    max-width: 8.8em;
+    max-height: 8.8em;
+    padding: 20px;
+    z-index: 10;
+}
+
+/* .portada img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%; 
+    height: auto;
+    filter: blur(8px); 
+    opacity: 0.8; 
+    z-index: -1; 
+} */
+ 
+ 
+
+/* link box */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ee6d6dae;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ultimo continaer */
+
+.container-last {
+    position: relative;
+    height: 100vh; /* La altura será del 100% del viewport */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+.container-last .collage {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+}
+
+.collage1 {
+    background-color: #f39c12;
+    top: 20px;
+    left: 30px;
+    transform: rotate(-10deg);
+}
+
+.collage2 {
+    background-color: #e74c3c;
+    top: 50px;
+    left: 350px;
+    transform: rotate(15deg);
+}
+
+.collage3 {
+    background-color: #3498db;
+    top: 230px;
+    left: 310px;
+    transform: rotate(-5deg);
+}
+.collage4 {
+    background-color: #34db7c;
+    top: 330px;
+    left: 40px;
+    transform: rotate(0deg);
+}
+.collage5 {
+    
+    visibility: hidden;
+    background-color: #b71ac0;
+    top: 300px;
+    left: 80px;
+    transform: rotate(0deg);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+}
+
+/* textos */
+h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.parrafada{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    letter-spacing: 0.1rem;
+}
+
+
+/* auxiliar */
+
+.centrado{
+    display: flex;
+    margin-left: 24.5rem;
+}
+.scale-up {
+    transform: scale(1.5); /* Agranda y mantiene la rotación */
+}
+
+iframe {
+    width: 100%; /* Ajusta el iframe al ancho del div */
+    height: 100%; /* Altura fija para el video */
+    border: none; /* Sin borde */
+}

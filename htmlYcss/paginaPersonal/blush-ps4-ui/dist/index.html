@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Blush (PS4 UI)</title>
+  <title>Mario Tomás</title>
   <!-- META -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,9 +22,9 @@
   <div id="plus"></div>
   <div id="info"></div>
   <div id="notifications"></div>
-  <div id="friends">15</div>
+  <div id="friends">27</div>
   <div id="user"></div>
-  <div id="username">Pixmy Sky</div>
+  <div id="username">Mario Tomás</div>
   <div id="trophies"></div>
   <div id="clock">--:-- AM</div>
 </header>
@@ -35,8 +35,8 @@
   <!-- Store menu item -->
   <div class="menu-item">
     <div class="item-img ps-store"></div>
-    <div class="item-subtitle">Start</div>
-    <span class="item-title">PlayStation&reg; Store</span>
+    <div class="item-subtitle">Portfolio</div>
+    <span class="item-title"><a href="/htmlYcss/paginaPersonal/portfolio.html" target="_blank">Mas sobre mi</a></span>
 
     <!-- Store items -->
     <div class="rss">
@@ -54,7 +54,7 @@
   <div class="menu-item">
     <div class="item-img new"></div>
     <div class="item-subtitle ascii">▼</div>
-    <span class="item-title">What's New</span>
+    <span class="item-title">Mas sobre mi</span>
 
     <!-- What's New -->
     <div class="rss">
@@ -133,16 +133,31 @@
     <div class="item-subtitle">Start</div>
     <span class="item-title">Furi</span>
   </div>
-
-  <!-- TV & Video -->
+  <!-- ourlast 2 -->
+  <div id="game-outlast_2" class="menu-item"
+       context-menu="
+                     Start Outlast 2 => #
+                     ----
+                     Upload/Download Saved Data => #
+                     Check for Update => #
+                     Health and Safety => #
+                     Intellectual Property Notices => #
+                     Delete => javascript:$('#game-outlast_2').css({display: 'none'}); offcontextmenu();
+                     Information => #
+                     "
+       >
+    <div class="item-img outlast"></div>
+    <div class="item-subtitle">Start</div>
+    <span class="item-title">Outlast 2</span>
+  </div>
+<!-- television -->
   <div class="menu-item">
     <div class="item-img tvv"></div>
     <div class="item-subtitle ascii">▼</div>
     <span class="item-title">TV &amp; Video</span>
 
     <div class="rss">
-
-      <!-- YouTube -->
+<!-- youtube -->
       <div id="app-youtube" class="sub-item"
            context-menu="
                          Start YouTube => #
@@ -162,23 +177,6 @@
     </div>
   </div>
 
-  <!-- Outlast 2 -->
-  <div id="game-outlast_2" class="menu-item"
-       context-menu="
-                     Start Outlast 2 => #
-                     ----
-                     Upload/Download Saved Data => #
-                     Check for Update => #
-                     Health and Safety => #
-                     Intellectual Property Notices => #
-                     Delete => javascript:$('#game-outlast_2').css({display: 'none'}); offcontextmenu();
-                     Information => #
-                     "
-       >
-    <div class="item-img outlast"></div>
-    <div class="item-subtitle">Start</div>
-    <span class="item-title">Outlast 2</span>
-  </div>
 
 </div>
 
