@@ -1,0 +1,44 @@
+//variables
+var numeroUno = 5;
+let texto = 'holamundo';
+numeroUno = 2;
+const array = [1, 'dos', 'tres', 4, 5];
+let numeroDos = 3;
+//operadores
+console.log(numeroUno + numeroDos);
+console.log(numeroUno - numeroDos);
+console.log(numeroUno * numeroDos);
+console.log(numeroUno / numeroDos);
+console.log(Math.pow(numeroUno, 3));
+console.log(numeroDos % numeroUno);
+
+numeros = [1, 4, 9, 4, 1, 4, 1, 4, 5, 4, 6, 9];
+repes = [];
+var suma = 0;
+var mayor = 0;
+var iminuscula = 0;
+var same;
+// for (let i = 0; i < numeros.length; i++) {
+//   suma += numeros[i];
+//   iminuscula++;
+//   if (mayor < numeros[i]) {
+//     mayor = numeros[i];
+//   }
+//   // console.log(repes.includes(numeros[i]));
+//   // if (!repes.includes(numeros[i])) {
+
+//   // repes.push(numeros[i]);
+//   // var numrtpd = 0;
+//   // for (let j = 0; i < numeros.length; j++) {
+//   //   if (numeros[i] == numeros[j]) {
+//   //     numrtpd++;
+//   //   }
+//   // }
+//   //   console.log('rl numero ' + numero[i] + 'se repite' + numrtpd + ' veces');
+//   // }
+
+//   //console.log('el numemf') < +numeros[i];
+// }
+// console.log(suma);
+// console.log(mayor);
+// console.log(iminuscula);
