@@ -1,89 +1,175 @@
-
-let bool1 = true;
-let bool2 = false;
-let booleanoAnd = bool1 && bool2;
-let boolOr = bool1 || bool2;
-let boolNot = !bool1;
-let booleanoMix0 = (bool1 || bool2) && (bool1 || (!bool1 && !bool2));
-console.log(booleanoMix0);
-
-let valorDivision = 17 / 3 ;
-console.log(valorDivision.toFixed(2)); 
-let valorResto = 17 % 7 ;
-console.log(valorResto);
-
-// Crea una variable A cuyo valor sea el número 9, y después crea una variable B cuyo valor sea un string con el número 9. 
-// Desarrolla la lógica para que cuando A == B muestre por consola “Son iguales”. ¿Qué pasa si en vez de tener A == B, comprobamos que A === B?
-let A = 9;
-let B = "9";
-
-if(A==B){
-    console.log("son iguales")
+// Crea una función resta que espere dos parámetros a y b, y que devuelva la resta de los mismos.
+function resta(a, b) {
+    return a - b;
 }
-if(A===B){
-    console.log("No son lo mismo")
-}
-
-// Crea una variable mochila que sea un array de elementos. Desarrolla la lógica para que: 
-// a) si mochila tiene más de 10 elementos, muestre por consola el mensaje “No puedo cargar con tantas cosas”;
-// b) si mochila contiene entre 10 y 2 elementos, se muestre por consola “Qué bien voy con mi mochila”, y, si no,  muestre por consola “Creo q no necesito una mochila”.
-let mochila = [];
-if(mochila.length>10){
-    console.log("No puedo cargar ocn tantas cosas")
-}
-if(mochila.length>=2 && mochila.length<=10){
-console.log("que bine estoy con mi omchila")
-}
-else{
-    console.log("creo que necesitin una omchila")
-}
-
-// Crear variable contarHasta10 con valor 0 e incrementar su valor con un bucle hasta que se verifique que contarHasta10 === 10.
-let valor = 0;
-while (valor<=10){
-    console.log(valor)
-    valor++;
-}
-// Crea una variable diaFestivo que sea de tipo boolean. Crea un ternario en el que si diaFestivo es true devuelva un console.log de
-//  ‘Hoy no trabajo’ y, si es false, devuelva ‘Hoy trabajo’.
-let diaFestivo = true;
-if(diaFestivo){
-    console.log("Hoy no trabajo")
-}
-else{
-    console.log("Hoy trabajo")
-}
-
-// Crea una variable arrayBucle tipo array vacía y rellénala con números del 4 al 18 utilizando un bucle.
-let arrayBucle = [];
-let number=0;
-for(let i=0; i<=18; i++){
-    if(i>=4){
-        arrayBucle.push(i);
-        console.log(arrayBucle)
+console.log(resta(3, 1))
+// Crea una función la cual te pregunte por una nota del 0 al 10 y, dependiendo del número, te devuelva la siguiente clasificación.
+function notas(a) {
+    switch (a) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4: console.log("Insuficiente"); break;
+        case 5:
+        case 6: console.log("Suficiente."); break;
+        case 7:
+        case 8: console.log("Notable."); break;
+        case 9:
+        case 10: console.log("Sobresaliente."); break;
+        default:
+            console.log("No es una nota");
+            break;
     }
 }
-// Recorre la variable creada anteriormente arrayBucle, suma todos sus elementos y guárdalos en una variable de nombre resultado.
-let resultado = 0;
-for(let i=0; i<arrayBucle.length; i++){
-resultado += arrayBucle[i];
+// Nota: Debes de usar el Switch.
+// 0 - 4: Insuficiente.
+// 5 - 6: Suficiente.
+// 7 - 8: Notable.
+// 9 - 10: Sobresaliente.
+
+// Crea la función duplicaNumero debe recibir un tipo number y devolver el doble del valor recibido. Si la función no recibe un dato tipo number debe devolver el string ‘Debo ser ejecutada con un número’.
+function duplicaNumero(a) {
+    if (typeof a == "number") {
+        return Math.pow(a, 2);
+    }
+    console.log("No es un nuemro")
 }
-console.log(resultado)
-// Dado el siguiente array [‘Con’, ‘Sofia’, ‘aprendiendo’, ‘bucles’], recorrelo utilizando el bucle for of y muestra por consola todos sus elementos. 
-// Después, recórrelo utilizando el bucle for in mostrando también por consola todos sus elementos.
-let array= ["Con", "Sofia", "aprendiendo", "bucles"];
-for(let value of array){
-console.log(value)
+console.log(duplicaNumero(2));
+// Crea la función caracterInicial. Debe recibir un tipo string y devolver un string con el primer carácter. 
+// Si la función no recibe un dato tipo string debe devolver el string 'Debo ser ejecutada con un string'. 
+// Si recibe un string vacío debe devolver 'Debo ser ejecutada con un string no vacío'.
+function caracterInicial(a) {
+    if (a.length == 0) {
+        console.log("Bro, esto no tiene na")
+    }
+    if (typeof a == "string") {
+        return a.charAt(0);
+    }
+    console.log("No es un texto")
 }
-for(let valuu in array){
-    
-console.log(valuu)
+console.log(caracterInicial("Mario"));
+
+// Crea la función ultimoCaracter. Debe recibir un tipo string y devolver un string con el último carácter.
+// Si la función no recibe un dato tipo string debe devolver el string 'Debo ser ejecutada con un string'.
+// Si recibe un string vacío debe devolver 'Debo ser ejecutada con un string no vacío'.
+function ultimoCaracter(a) {
+    if (a.length == 0) {
+        console.log("Bro, esto no tiene na")
+    }
+    if (typeof a == "string") {
+        return a.charAt(a.length - 1);
+    }
+    console.log("No es un texto")
 }
-// Crea un bucle utilizando while que itere 20 veces y muestre por consola “Patata” cada vez que el número de la iteración sea múltiplo de 3.
-let j=0;
-while(j>=20){
-    if(j % 3 == 0){
-        console.log("Patata");
-        j++;
+console.log(ultimoCaracter("Mario"));
+
+// Crea la función cuentaCaracteres. Debe recibir un tipo string y devolver un number con el número de carácteres.
+// Si la función no recibe un dato tipo string debe devolver el string 'Debo ser ejecutada con un string'.
+function cuentaCaracteres(a) {
+    if (a.length == 0) {
+        console.log("Bro, esto no tiene na")
+    }
+    if (typeof a == "string") {
+        return (a.length);
+    }
+    console.log("No es un texto")
+}
+console.log(cuentaCaracteres("Mario"));
+
+// Un palíndromo es una palabra que se escribe igual del derecho que del revés, por ejemplo: orejero, rallar o somos.  Crea la función esPalindromo que recibirá una cadena de texto y deberá devolver si es un palíndromo o no.
+// Si la función no recibe una cadena de texto o está vacía 'no es un formato correcto'.
+function esPalindromo(a) {
+    if (typeof a == "string" && a.length > 0) {
+        let z = a.split("").reverse().join("");
+        if (z == a) {
+            return "Es un palindromo"
+        }
+        else {
+            return "No es un palindromo"
+        }
+    }
+    // if (a.length==0){
+    //     console.log("Bro, esto no tiene na")
+    // }
+    // if(typeof a == "string"){
+    //     for(let i=0; i<a.length; i++){
+    //         console.log(a.charAt(i))
+    //         console.log(a.charAt(a.length-i))
+    //     if(a.charAt(i) == a.charAt(a.length-i)){
+    //         let y=0;
+    //         y++;
+    //     }
+    //     if(y==a.length){
+    //         console.log("Es un palindromo");
+    //     }
+    //  }
+    //     }
+    // console.log("No es un texto")
+}
+console.log(esPalindromo("sometemos"));
+
+// Crea la función getPrecioMostrar para que devuelva una cadena de texto con formato precio con dos decimales. Para 2 debería devolver 2.00 €. 
+// Si la función no recibe un número debería devolver devolver 'no es un formato correcto'.
+function getPrecioMostrar(a) {
+    if (typeof a == "number") {
+        return a.toFixed(2);
+
+        //  let z = a.toString();
+        // if(z.length>=1){
+        //     z.push(".00")
+        //     return a+z;
+        // }
+        // if(z.length>=2){
+        //     z.push("0")
+        //     return a+z
+        // }
+    } else {
+        return "no lo se crack solo quiero numeros"
     }
 }
+console.log(getPrecioMostrar(3.2));
+
+// Crea la función division que acepte como argumento dos números y devuelva el resultado de su división.
+function division(a, b) {
+    return a / b;
+}
+console.log(division(9, 2))
+// Crea una función que, dada una array de números, devuelva una nueva array que tenga solo los números que son 5 o más. Ejemplo entrada [3, 6, 8, 2] salida [6, 8].
+let tiraeta = [1, 5, 2, 4, 6, 9, 2, 11];
+function mayorCinco(a) {
+    let mayorcitos = [];
+    for (let i = 0; i < a.length; i++) {
+        
+        if (a[i] >= 5) {
+            // a[i].push(mayorcitos)
+            mayorcitos.push(a[i]);
+        }
+    }
+    return mayorcitos
+}
+console.log(mayorCinco(tiraeta))
+// Crea una función que nos pida un número por prompt y que nos indique si es o no un número primo. Debe devolver true si es primo, sino false.
+// Un número primo es aquel que solo puede dividirse entre 1 y sí mismo. Por ejemplo: 25 no es primo, ya que 25 es divisible entre 5, sin embargo, 17 si es primo.
+let peticion = prompt("Dime un numero")
+function numeroPrimo(a){
+    if(typeof a == "number"){
+        let x=0;
+        for (let i=0; i<=a; i++){
+            
+            if(a % i == 0){
+                
+                x++
+            }
+        }
+
+        if(x==2){
+            alert("Es un numero primo") ;
+        }
+        else{
+            alert ("No es un numero primo");3
+        }
+    }
+}
+peticion = +peticion;
+(numeroPrimo(peticion));
