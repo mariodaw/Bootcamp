@@ -33,20 +33,24 @@ function duplicaNumero(a) {
     if (typeof a == "number") {
         return Math.pow(a, 2);
     }
-    console.log("No es un nuemro")
+    return "No es un nuemro";
+    // Devolver siempre algo con return no solamente un console.log
 }
+
 console.log(duplicaNumero(2));
 // Crea la función caracterInicial. Debe recibir un tipo string y devolver un string con el primer carácter. 
 // Si la función no recibe un dato tipo string debe devolver el string 'Debo ser ejecutada con un string'. 
 // Si recibe un string vacío debe devolver 'Debo ser ejecutada con un string no vacío'.
 function caracterInicial(a) {
     if (a.length == 0) {
-        console.log("Bro, esto no tiene na")
+        return "Bro, esto no tiene na";
     }
     if (typeof a == "string") {
         return a.charAt(0);
     }
-    console.log("No es un texto")
+    return "No es un texto";
+    // poner los return en cada caso al usar if o en cada posible caso
+    // Primero ley de la progrmacion si funciona no lo toques
 }
 console.log(caracterInicial("Mario"));
 
@@ -55,12 +59,13 @@ console.log(caracterInicial("Mario"));
 // Si recibe un string vacío debe devolver 'Debo ser ejecutada con un string no vacío'.
 function ultimoCaracter(a) {
     if (a.length == 0) {
-        console.log("Bro, esto no tiene na")
+        return"Bro, esto no tiene na";
     }
     if (typeof a == "string") {
         return a.charAt(a.length - 1);
     }
-    console.log("No es un texto")
+    return"No es un texto";
+    // poner los return en cada caso al usar if o en cada posible caso
 }
 console.log(ultimoCaracter("Mario"));
 
@@ -151,8 +156,10 @@ function mayorCinco(a) {
 console.log(mayorCinco(tiraeta))
 // Crea una función que nos pida un número por prompt y que nos indique si es o no un número primo. Debe devolver true si es primo, sino false.
 // Un número primo es aquel que solo puede dividirse entre 1 y sí mismo. Por ejemplo: 25 no es primo, ya que 25 es divisible entre 5, sin embargo, 17 si es primo.
-let peticion = prompt("Dime un numero")
-function numeroPrimo(a){
+
+function numeroPrimo(){
+    let a = prompt("Dime un numero")
+    a = +a;
     if(typeof a == "number"){
         let x=0;
         for (let i=0; i<=a; i++){
@@ -162,14 +169,13 @@ function numeroPrimo(a){
                 x++
             }
         }
-
+        
         if(x==2){
             alert("Es un numero primo") ;
         }
         else{
-            alert ("No es un numero primo");3
+            alert ("No es un numero primo");
         }
     }
 }
-peticion = +peticion;
-(numeroPrimo(peticion));
+(numeroPrimo());
