@@ -1,107 +1,43 @@
-// Funciones flecha
-// Convierte la siguiente función en una función flecha:
-// function saludar() {
-//   return "Hola";
-// }
-const saludar = () => "Hola";
-// Convierte la siguiente función en una función flecha en línea:
-// function division(a,b) {
-//   return a / b;
-// }
-const divison = (a,b) => a/b;
-// Convierte la siguiente función en una función flecha:
-// function miNombre(nombre) {
-//   return `Mi nombre es ${nombre}`;
-// }
-const miNombre =  name =>  "Mi nombre es" `${name}`;
-// Convierte las siguientes funciones en funciones flecha:
-// function test2() {
-//   console.log("Función test 2 ejecutada.");
-// }
-// function test1(callback) {
-//   callback();
-// };
 
-const test2  = () =>  console.log("Función test 2 ejecutada.");
-const test1 = (callback) => callback(); 
-// 2. Foreach
-// Utiliza la siguiente array para resolver los próximos ejercicios: 
-      
-let gente = [
-        {nombre: "Jamiro",
-          edad: 45,},
-        {nombre: "Juan",
-          edad: 35,},
-        {nombre: "Paco",
-          edad: 34,},
-        {nombre: "Pepe",
-          edad: 14,},
-        {nombre: "Pilar",
-          edad: 24,},
-        {nombre: "Laura",
-          edad: 24,},
-        {nombre: "Jenny",
-          edad: 10,},
-      ];
-// Crea un array con la gente mayor de 25 años y muéstralo por consola.
-// Crea un array con la gente que empieza por J. 
-// const personas = [];
-gente.forEach((persona) => {
-        if (persona.edad>25) {
-            console.log(persona);
-            personas.push(gente.name);
-        }
-     });
-     
-gente.forEach((persona) => {
-    if (persona.nombre[0]=="J") {
-            console.log(persona);
-            personas.push(gente.name);
-        }
-     });
-     
+// 1.Obtener y mostrar usuarios utilizando la API de JSONPlaceholder
+// En este ejercicio utilizaremos la API de https://jsonplaceholder.typicode.com/users. Leyendo su documentación, deberás hacer lo siguiente:
 
-// 3. Map
-// Utilizando el array de antes crea un array con la gente mayor de 25 años y muéstralo por consola.
-// const personas = gente.map((persona)=> persona.edad>25)
+// Imprimir por consola la lista (array) de usuarios.
+// Imprimir por consola solo el nombre de los usuarios.
+let users=[]   ;
 
-// Crea un array con la gente que empieza por J. 
-// const personas = gente.map((persona)=> persona.nombre[0]=="J")
+axios
+  .get("https://jsonplaceholder.typicode.com/users")
+  .then((res) => {
+    // console.log(res.data),
+  console.log(res.data.map((users)=> users.name))
+    users = res.data.map ( (users) => users.name);
+    
+}
+)
+  .catch((err) => console.error(err));
+  
+  console.log(users);
 
-// Dado el siguiente array, crear otro que sea el resultado de elevar cada número a si mismo:
-//  const numbers = [ 4, 5, 6, 7, 8, 9, 10];
-
-const elevados = numbers.map((elevado)=> elevado=elevado*elevado);
-
-// Resultado esperado
-// [256, 3125, 46656, 823543, 16777216, 387420489, 10000000000]
+  ;
+// Crear una variable global llamada "users" y, al hacer la solicitud utilizando Axios, rellenarla con la respuesta de la API(el array).
+//  Este proceso debe realizarse fuera de cualquier función.
+// Nota: Después de realizar el console.log de la variable "users", es normal que aparezca vacía debido a que JavaScript no es bloqueante y el console.log se ejecuta antes de que la variable sea llenada con la información de la solicitud.
+const showUsers  = () =>  
+    {
+        document.getElementById("texto").innerHTML=users
+    }
+document.getElementById("boton").addEventListener("click",showUsers);
 
 
+// // archivo JS
 
 
-// 4. Filter
-// Crea un segundo array que devuelva los impares
-//   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const impar = numbers.filter((num)=> num%2!=0)
-// Dado el siguiente array, genera un segundo array que filtre los platos veganos y saque una sentencia como la del ejemplo:
- const foodList = [
-        { name: 'Tempeh', isVeggie: true },
-        { name: 'Cheesbacon burguer', isVeggie: false },
-        { name: 'Tofu burguer', isVeggie: true },
-        { name: 'Entrecot', isVeggie: false }
-      ];
-      /* [
-          'Que rico Tempeh me voy a comer!',
-          'Que rica Tofu burguer me voy a comer!'
-         ]
-      */
-      const veganPlate= foodList.filter((vegetal)=>foodList.isVeggie==false)
+// // variable global
+// // petición axios (aquí hago la petición y dentro relleno la variable creada anteriormente)
 
-// 5. Reduce
-// Dado el siguiente array, obtén la multiplicación de todos los elementos del array:
-const numbers = [39, 2, 4, 25, 62];
-const sum = numbers.reduce((a,b)=> a*b)
+// Crear una función llamada "showUsers" que muestre por consola la variable global "users" que has creado.
+// Crea un botón que cuando lo cliques ejecute la función que habías creado
+// Ahora en vez de mostrar los usuarios por consola muestra el nombre de cada uno en el DOM (en el HTML).
 
-// Salida--> 483600
-
-
+// Recuerda que para estos ejercicios deberás utilizar Axios.
