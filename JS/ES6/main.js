@@ -4,7 +4,7 @@
 
 // Imprimir por consola la lista (array) de usuarios.
 // Imprimir por consola solo el nombre de los usuarios.
-let users=[]   ;
+let users=[];
 
 axios
   .get("https://jsonplaceholder.typicode.com/users")
